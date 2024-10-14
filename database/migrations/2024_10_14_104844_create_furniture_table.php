@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name', 100);
             $table->text('description')->nullable();
             $table->decimal('cost', 10,2);
-            $table->integer('stock')->default(0);
+            $table->boolean('stock')->default(false);
             $table->timestamps();
         });
     }

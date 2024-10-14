@@ -5,10 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Furniture extends Model
+class help extends Model
 {
-    /** @use HasFactory<\Database\Factories\FurnitureFactory> */
     use HasFactory;
-
-    protected $guarded = [];
 }

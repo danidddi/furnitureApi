@@ -23,7 +23,7 @@ class FurnitureFactory extends Factory
             'name' => fake()->word(),
             'description' => fake()->sentence(),
             'cost' => mt_rand($minPrice * 100, $maxPrice * 100) / 100,
-            'stock' => fake()->randomDigit()
+            'stock' => fake()->boolean()
         ];
     }
 }
