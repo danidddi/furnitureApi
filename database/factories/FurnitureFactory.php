@@ -20,7 +20,7 @@ class FurnitureFactory extends Factory
         $maxPrice = 10_000.00; // максимальная цена
 
         return [
-            'name' => fake()->title(),
+            'name' => fake()->word(),
             'description' => fake()->sentence(),
             'cost' => mt_rand($minPrice * 100, $maxPrice * 100) / 100,
             'stock' => fake()->randomDigit()
