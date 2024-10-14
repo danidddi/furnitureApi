@@ -16,8 +16,14 @@ class FurnitureFactory extends Factory
      */
     public function definition(): array
     {
+        $minPrice = 100.00; // минимальная цена
+        $maxPrice = 10_000.00; // максимальная цена
+
         return [
-            //
+            'name' => fake()->title(),
+            'description' => fake()->sentence(),
+            'cost' => mt_rand($minPrice * 100, $maxPrice * 100) / 100,
+            'stock' => fake()->randomDigit()
         ];
     }
 }
